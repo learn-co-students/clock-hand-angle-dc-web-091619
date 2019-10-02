@@ -16,9 +16,6 @@ def clock_angle(time)
         angle = 360 - angle
     else angle
     end
-    
-
-    # binding.pry
 end
 
 # clock_angle("12:25")
