@@ -6,12 +6,9 @@ def clock_angle(time)
     minute = time_now[1].to_i
 
     mh = minute * 6
-    if hour != 12
-        hh = (hour * 30) + (minute * 0.5)
-    else hh = minute * 0.5
-    end
-
+    hh = (hour * 30) + (minute * 0.5)
     angle = (mh - hh).abs
+    
     if angle > 180
         angle = 360 - angle
     else angle
