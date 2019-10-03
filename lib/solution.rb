@@ -3,7 +3,7 @@ def clock_angle(time)
   hour = time_array[0].to_i
   min = time_array[1].to_i
 
-  hour_angle = (30 * hour) + (min/60 * 30)
+  hour_angle = (30.0 * hour) + (min/60.0 * 30.0)
   minute_angle = 6 * min
 
   answer = (hour_angle - minute_angle).abs
