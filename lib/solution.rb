@@ -12,11 +12,8 @@ def clock_angle(time)
     else
       minute_angle = 0
     end
-  
-    if hour_angle > minute_angle
-      total = hour_angle - minute_angle
-    else
-      total = minute_angle - hour_angle
-    end
-    total = 360 - total if total > 180
+
+    total = (hour_angle - minute_angle).abs
+    return (360 - total) if total > 180
+    total
 end
